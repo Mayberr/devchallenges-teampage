@@ -1,0 +1,76 @@
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+}
+header {
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-family: "PT serif", serif;
+    font-weight: 700;
+}
+.description p {
+    font-size: 0.8em;
+}
+h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.employee {
+    display: flex;
+    width: 50%;
+}
+.employee:nth-child(2n+0) {
+    margin-top: 10%;
+}
+.employee__name {
+    font-weight: 600;
+}
+
+.employee__info img {
+    width: 100%;
+}
+
+.employee__role {
+    font-weight: 400;
+    margin-left: 0;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+}
+footer {
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    color: #BDBDBD;
+    text-align: center;
+    flex-shrink: 0;
+    width: 100%;
+    position: sticky;
+ }
+footer a {
+    font-weight: 700;
+    color: #BDBDBD;
+}
+
+@media only screen and (min-width: 769px) {
+    header {
+        flex-direction: row;
+    }
+    .employee {
+        width: 33%;
+    }
+    .employee:nth-child(2n+0) {
+        margin-top: 0%;
+    }
+    .employee:nth-child(3n-1) {
+        margin-top: 10%;
+    }
+}
