@@ -5,6 +5,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
+    margin-bottom: 5em
 }
 h1 {
     font-family: "PT serif", serif;
@@ -61,8 +62,19 @@ footer a {
 }
 
 @media only screen and (min-width: 769px) {
+    body {
+        margin-left: 4em;
+        margin-right: 4em;
+    }
     header {
         flex-direction: row;
+        align-items: baseline;;
+    }
+    h1 {
+        width: 55%;
+    }
+    .description {
+        max-width: 17em;
     }
     .employee {
         width: 33%;
